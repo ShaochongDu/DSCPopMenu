@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PopMenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1l-aB-jAv">
+                        <rect key="frame" x="34" y="0.0" width="278" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G5M-AY-xkx">
+                        <rect key="frame" x="5" y="4" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="OxF-tk-pnz"/>
+                            <constraint firstAttribute="width" constant="25" id="mwf-Pp-fc8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G5M-AY-xkx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="3fh-U5-hgn"/>
+                    <constraint firstAttribute="bottom" secondItem="K1l-aB-jAv" secondAttribute="bottom" id="APh-Kr-P4b"/>
+                    <constraint firstAttribute="trailing" secondItem="K1l-aB-jAv" secondAttribute="trailing" constant="8" id="Fti-JA-lul"/>
+                    <constraint firstItem="K1l-aB-jAv" firstAttribute="leading" secondItem="G5M-AY-xkx" secondAttribute="trailing" constant="4" id="Twn-1V-Juo"/>
+                    <constraint firstItem="G5M-AY-xkx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dHg-Yh-PfZ"/>
+                    <constraint firstItem="K1l-aB-jAv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nDu-tW-aDz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftImgView" destination="G5M-AY-xkx" id="ajd-Sb-lP1"/>
+                <outlet property="menuTitleLabel" destination="K1l-aB-jAv" id="W1V-KF-bqW"/>
+            </connections>
+            <point key="canvasLocation" x="254" y="171.5"/>
+        </tableViewCell>
+    </objects>
+</document>
